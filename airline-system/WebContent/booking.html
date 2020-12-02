@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- BOOOKING -->
+<html>
+	<head>
+        <meta charset="utf-8>">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body>
+    	<h1>Flight Ticket Booking</h1>
+	<div class="main-agileinfo">
+		<div class="sap_tabs">			
+			<div id="horizontalTab">
+				<ul class="resp-tabs-list">
+					<li class="resp-tab-item"><span>Round Trip</span></li>		
+				</ul>	
+				<div class="clearfix"> </div>	
+				<div class="resp-tabs-container">
+					<div class="tab-1 resp-tab-content roundtrip">
+						<form action="#" method="post">
+							<div class="from">
+								<h3>From</h3>
+								<input type="text" name="city" class="city1" placeholder="Type Departure City" required="">
+							</div>
+							<div class="to">
+								<h3>To</h3>
+								<input type="text" name="city" class="city2" placeholder="Type Destination City" required="">
+							</div>
+							<div class="clear"></div>
+							<div class="date">
+								<div class="depart">
+									<h3>Depart</h3>
+									<input  id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+								</div>
+								<div class="return">
+									<h3>Return</h3>
+									<input  id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="class">
+								<h3>Class</h3>
+								<select id="w3_country1" onchange="change_country(this.value)" class="frm-field required">
+									<option value="null">Economy</option>  
+									<option value="null">Premium Economy</option>   
+									<option value="null">Business</option>   
+									<option value="null">First class</option>   						
+								</select>
+
+							</div>
+							<div class="clear"></div>
+								
+								
+							<div class="clear"></div>
+							<input type="submit" value="Search Flights">
+						</form>						
+					</div>		
+		
+				</div>						
+			</div>
+		</div>
+	</div>
+	<div class="footer-w3l">
+		<p class="agileinfo"> &copy; 2020 Airline Reservation System . All Rights Reserved | Design by Team2</a></p>
+	</div>
+    </body>
+</html>
