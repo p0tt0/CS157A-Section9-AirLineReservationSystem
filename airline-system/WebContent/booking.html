@@ -17,30 +17,30 @@
 				<div class="clearfix"> </div>	
 				<div class="resp-tabs-container">
 					<div class="tab-1 resp-tab-content roundtrip">
-						<form action="#" method="post">
+						<form method="post" action="bookingResults.jsp">
 							<div class="from">
 								<h3>From</h3>
-								<input type="text" name="city" class="city1" placeholder="Type Departure City" required="">
+								<input type="text" name="from" class="city1" placeholder="Type Departure City" required="">
 							</div>
 							<div class="to">
 								<h3>To</h3>
-								<input type="text" name="city" class="city2" placeholder="Type Destination City" required="">
+								<input type="text" name="to" class="city2" placeholder="Type Destination City" required="">
 							</div>
 							<div class="clear"></div>
 							<div class="date">
 								<div class="depart">
 									<h3>Depart</h3>
-									<input  id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+									<input  id="datepicker" name="departDate" type="text" value="">
 								</div>
 								<div class="return">
 									<h3>Return</h3>
-									<input  id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+									<input  id="datepicker1" name="returnDate" type="text" value="">
 								</div>
 								<div class="clear"></div>
 							</div>
 							<div class="class">
 								<h3>Class</h3>
-								<select id="w3_country1" onchange="change_country(this.value)" class="frm-field required">
+								<select id="w3_country1" name="class" onchange="change_country(this.value)" class="frm-field required">
 									<option value="null">Economy</option>  
 									<option value="null">Premium Economy</option>   
 									<option value="null">Business</option>   
@@ -53,7 +53,7 @@
 								
 							<div class="clear"></div>
 							<input type="submit" value="Search Flights">
-						</form>						
+						</form>					
 					</div>		
 		
 				</div>						

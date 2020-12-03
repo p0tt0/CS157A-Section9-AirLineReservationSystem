@@ -12,7 +12,9 @@ try{
 rs.next();
 if(rs.getString("password").equals(password) && rs.getString("username").equals(username))
 {
-out.println("Hello " +username);
+session.setAttribute("username", username);
+String redirectURL = "index.html";
+response.sendRedirect(redirectURL);
 }
 }
 catch (Exception e) {
