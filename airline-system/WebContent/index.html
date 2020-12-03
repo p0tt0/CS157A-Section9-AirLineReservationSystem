@@ -29,10 +29,10 @@
 
 		<!-- search area -->
 		<div class="searchform">
+		<form action="indexsearch.jsp">
 			<input type="text" placeholder="Search..." name="search">
 			<br></br>
-			<button type="button"><i class ="fa fa-search"></i></button>
-
+			
 			<input type="radio" id="price" name="filter" value="price">
 			<label for="price">Price</label>
 			<input type="radio" id="rating" name="filter" value="rating">
@@ -41,7 +41,9 @@
 			<label for="location">Location</label>
 			<input type="radio" id="flight_time" name="filter" value="flight_time">
 			<label for="flight_time">Flight Time</label>
+			<input type="submit" value="search">
 			<br></br>
+		</form>
 		</div>
 
 		<!-- review -->
