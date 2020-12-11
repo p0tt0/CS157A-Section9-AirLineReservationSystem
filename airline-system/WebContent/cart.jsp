@@ -29,3 +29,7 @@ System.out.print("ERROR " + e);
 e.printStackTrace();
 }
 %>
+<Form method="post" action="removefromcart.jsp">
+<input type="text" name="removefromcart" placeholder="Enter flight Number" required="">
+<input type="submit" value="Remove flight from Cart">
+</Form>
