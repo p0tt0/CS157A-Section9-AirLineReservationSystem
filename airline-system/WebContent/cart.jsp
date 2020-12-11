@@ -33,3 +33,7 @@ e.printStackTrace();
 <input type="text" name="removefromcart" placeholder="Enter flight Number" required="">
 <input type="submit" value="Remove flight from Cart">
 </Form>
+<br></br>
+		<form action="checkout.jsp" method="get">
+    	<input type="submit" value = "checkout" name="checkout" id="checkout" />
+		</form>
